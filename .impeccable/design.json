@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-20T15:40:00+08:00",
+  "title": "Design System: 团队项目管理系统",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "专注蓝", "canonical": "#165DFF", "tonalRamp": ["#0F3B99", "#124DBF", "#165DFF", "#3570FF", "#5A8AFF", "#80A5FF", "#A6C0FF", "#CCDAFF"] },
+      "success": { "role": "success", "displayName": "生长绿", "canonical": "#00B42A", "tonalRamp": ["#006A19", "#008F22", "#00B42A", "#1ACC44", "#3DE063", "#66F084", "#99F5AB", "#CCFAD5"] },
+      "error": { "role": "error", "displayName": "警示红", "canonical": "#F53F3F", "tonalRamp": ["#B32424", "#D43131", "#F53F3F", "#F75C5C", "#F97A7A", "#FB9C9C", "#FCBEBE", "#FEDFDF"] },
+      "warning": { "role": "warning", "displayName": "警示橙", "canonical": "#F59E0B", "tonalRamp": ["#B87500", "#D48700", "#F59E0B", "#F7B230", "#F9C65B", "#FBD786", "#FDE5A8", "#FEF3CC"] },
+      "secondary": { "role": "secondary", "displayName": "空灵紫", "canonical": "#8B5CF6", "tonalRamp": ["#5B21B6", "#6D3ADE", "#8B5CF6", "#A27DF8", "#B89EFA", "#CEBEFC", "#E1D6FD", "#F0EAFE"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "页面标题，仪表盘和功能模块主标题" },
+      "headline": { "displayName": "Headline", "purpose": "模块标题，如「需求管理」「看板视图」" },
+      "title": { "displayName": "Title", "purpose": "卡片标题、侧边栏项、弹窗标题" },
+      "body": { "displayName": "Body", "purpose": "正文内容、表格单元格、描述文本" },
+      "label": { "displayName": "Label", "purpose": "标签、徽章文字、辅助信息" }
+    },
+    "shadows": [
+      { "name": "card-hover", "value": "0 1px 3px rgba(0,0,0,0.08)", "purpose": "卡片 hover 时提供轻微抬起提示" },
+      { "name": "modal", "value": "0 4px 24px rgba(0,0,0,0.15)", "purpose": "模态弹窗阴影，与背景遮罩配合" },
+      { "name": "dropdown", "value": "0 2px 8px rgba(0,0,0,0.1)", "purpose": "下拉菜单、选择器浮层阴影" }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "默认缓动曲线" },
+      { "name": "duration-fast", "value": "150ms", "purpose": "hover 过渡" },
+      { "name": "duration-normal", "value": "200ms", "purpose": "一般过渡" },
+      { "name": "duration-slow", "value": "300ms", "purpose": "弹出/收起过渡" }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "主操作按钮，用于「新建需求」「快速新建」等主要行动点",
+      "html": "<button class=\"ds-btn-primary\"><i class=\"fas fa-plus\"></i> 新建需求</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #165DFF; color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 500; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; } .ds-btn-primary:hover { background: #1d4ed8; } .ds-btn-primary:active { transform: scale(0.96); } .ds-btn-primary:focus-visible { outline: 2px solid #165DFF; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "次要操作按钮，用于「查询」「重置」等辅助操作",
+      "html": "<button class=\"ds-btn-secondary\"><i class=\"fas fa-search\"></i> 查询</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: #F5F7FA; color: #374151; padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 500; border: none; cursor: pointer; transition: background 0.2s; } .ds-btn-secondary:hover { background: #E5E7EB; } .ds-btn-secondary:focus-visible { outline: 2px solid #165DFF; outline-offset: 2px; }"
+    },
+    {
+      "name": "Status Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "状态标签，用于显示需求状态（待评审/开发中/测试中/已上线）",
+      "html": "<span class=\"ds-tag ds-tag-developing\">开发中</span>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; } .ds-tag-developing { color: #165DFF; background: rgba(22, 93, 255, 0.1); } .ds-tag-pending { color: #F59E0B; background: rgba(245, 158, 11, 0.1); } .ds-tag-testing { color: #8B5CF6; background: rgba(139, 92, 246, 0.1); } .ds-tag-launched { color: #00B42A; background: rgba(0, 180, 42, 0.1); }"
+    },
+    {
+      "name": "Priority Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "优先级标签（P0-P3），带语义颜色标识",
+      "html": "<span class=\"ds-priority ds-priority-p0\">P0</span>",
+      "css": ".ds-priority { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; } .ds-priority-p0 { color: #F53F3F; background: rgba(245, 63, 63, 0.1); } .ds-priority-p1 { color: #F97316; background: rgba(249, 115, 22, 0.1); } .ds-priority-p2 { color: #165DFF; background: rgba(22, 93, 255, 0.1); } .ds-priority-p3 { color: #9CA3AF; background: rgba(156, 163, 175, 0.1); }"
+    },
+    {
+      "name": "Role Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "开发人员职能标签（前端/后端/数据/PM）",
+      "html": "<span class=\"ds-role ds-role-frontend\">李浩(前端)</span>",
+      "css": ".ds-role { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; } .ds-role-frontend { color: #165DFF; background: rgba(22, 93, 255, 0.1); } .ds-role-backend { color: #00B42A; background: rgba(0, 180, 42, 0.1); } .ds-role-data { color: #F59E0B; background: rgba(245, 158, 11, 0.1); } .ds-role-pm { color: #8B5CF6; background: rgba(139, 92, 246, 0.1); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "通用信息容器，用于统计卡片、区块面板",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-title\">总需求数</div><div class=\"ds-card-value\">17</div><div class=\"ds-card-trend ds-trend-up\"><i class=\"fas fa-arrow-up\"></i> +3 本周</div></div>",
+      "css": ".ds-card { background: #fff; border-radius: 8px; border: 1px solid #E5E7EB; padding: 16px; transition: box-shadow 0.2s; } .ds-card:hover { box-shadow: 0 1px 3px rgba(0,0,0,0.08); } .ds-card-title { font-size: 14px; color: #6B7280; margin-bottom: 8px; } .ds-card-value { font-size: 30px; font-weight: 700; color: #1F2937; } .ds-card-trend { font-size: 12px; margin-top: 4px; } .ds-trend-up { color: #00B42A; } .ds-trend-down { color: #F53F3F; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "搜索输入框和表单输入",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"搜索需求编号/标题\">",
+      "css": ".ds-input { border: 1px solid #D1D5DB; border-radius: 8px; padding: 8px 12px; font-size: 14px; color: #374151; background: #fff; outline: none; transition: border-color 0.2s, box-shadow 0.2s; width: 200px; } .ds-input:focus { border-color: #165DFF; box-shadow: 0 0 0 3px rgba(22, 93, 255, 0.1); } .ds-input::placeholder { color: #9CA3AF; }"
+    },
+    {
+      "name": "Data Table",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "需求列表数据表格",
+      "html": "<table class=\"ds-table\"><thead><tr><th>需求编号</th><th>需求标题</th><th>优先级</th><th>状态</th></tr></thead><tbody><tr class=\"ds-row-selected\"><td class=\"ds-code\">REQ-2025-001</td><td>用户登录优化</td><td><span class=\"ds-priority ds-priority-p0\">P0</span></td><td><span class=\"ds-tag ds-tag-testing\">测试中</span></td></tr></tbody></table>",
+      "css": ".ds-table { width: 100%; font-size: 14px; border-collapse: collapse; } .ds-table th { background: #F5F7FA; font-weight: 600; color: #374151; text-align: left; padding: 12px 16px; } .ds-table td { padding: 12px 16px; border-bottom: 1px solid #F3F4F6; } .ds-table tbody tr { cursor: pointer; transition: background 0.15s; } .ds-table tbody tr:hover { background: rgba(22, 93, 255, 0.04); } .ds-row-selected { background: rgba(22, 93, 255, 0.08) !important; } .ds-code { font-family: monospace; color: #165DFF; }"
+    },
+    {
+      "name": "Navigation Item",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "侧边栏导航项，含激活态",
+      "html": "<div class=\"ds-nav-item\"><i class=\"fas fa-tasks\"></i><span>需求管理</span></div><div class=\"ds-nav-item ds-nav-active\"><i class=\"fas fa-tachometer-alt\"></i><span>仪表盘</span></div>",
+      "css": ".ds-nav-item { display: flex; align-items: center; gap: 12px; padding: 10px 16px; color: #374151; cursor: pointer; transition: all 0.2s; font-size: 14px; } .ds-nav-item:hover { background: rgba(22, 93, 255, 0.08); color: #165DFF; } .ds-nav-active { background: rgba(22, 93, 255, 0.12); color: #165DFF; border-right: 3px solid #165DFF; } .ds-nav-item i { width: 20px; text-align: center; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "蓝本",
+    "overview": "以蓝色为锚点，以信息效率为核心的团队协作工具。设计上追求「专业不刻板，清晰不寡淡」—— 每个界面元素都有明确的目的，不做无意义的装饰，但也不沦为纯功能主义的枯燥表格。蓝色主调贯穿始终，承载「可靠、专业、信任」的品牌情绪；辅助色系严格按语义分配，形成一套可预测的颜色密码，让用户在扫视的瞬间就能判断优先级、状态和角色。",
+    "keyCharacteristics": [
+      "信息密度中等偏高，但视觉层级清晰，扫视即得",
+      "扁平为主的框架，通过轻微阴影和边框增强可读性",
+      "组件风格一致，圆角克制（8px），避免过度圆润",
+      "颜色即信息：每种颜色都承载明确的语义角色",
+      "中文排版优先，系统字体栈确保跨平台中文渲染质量"
+    ],
+    "rules": [
+      { "name": "颜色即信息", "body": "不使用纯装饰性颜色。每种颜色都有语义角色：蓝色 = 操作 / 开发中，绿色 = 完成 / 上线，红色 = 紧急 / 错误，橙色 = 警告 / 待审，紫色 = 测试 / PM。如果一种颜色不能通过「扫一眼就传达信息」的测试，就不应该使用。", "section": "colors" },
+      { "name": "层级即关系", "body": "不要为了突出而跳级使用字号。内容区块的标题用 Headline（20px），区块内部小标题用 Title（16px），正文用 Body（14px）。跳级会让信息关系混乱。", "section": "typography" },
+      { "name": "扁平优先", "body": "表面在静止状态无阴影，靠边框和背景色区分层级。阴影仅作为反馈（hover、focus）或层级暗示（弹窗、下拉）使用，不做装饰。", "section": "elevation" }
+    ],
+    "dos": [
+      "使用语义色编码：蓝色=操作/开发中，绿色=成功/上线，红色=紧急/错误，橙色=警告/待审，紫色=测试/PM",
+      "保持圆角一致：按钮/卡片/输入框统一 8px，标签 4px",
+      "保持扁平优先：静止时无阴影，hover 再加轻微阴影",
+      "使用系统字体栈保证跨平台中文渲染质量",
+      "确保表格行有 hover 高亮（4%）和选中高亮（8%）",
+      "为所有按钮提供 hover 态反馈"
+    ],
+    "donts": [
+      "添加纯装饰性颜色 — 每种颜色必须有语义",
+      "使用大于 12px 的圆角（标签徽章除外，用 4px）",
+      "在静止卡片上使用阴影 — 层级靠边框区分",
+      "为大段正文使用灰色文字（低于 7:1 对比度）",
+      "同时使用边框 + 大阴影做装饰",
+      "在侧边栏/导航中使用图标而不带文字标签"
+    ]
+  }
+}
