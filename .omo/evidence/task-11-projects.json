@@ -1,0 +1,52 @@
+[
+  {
+    "id": "proj-payment",
+    "name": "支付中台",
+    "description": "支付核心系统",
+    "leadId": "user-pm-001",
+    "leadName": "张明",
+    "isActive": true,
+    "createdAt": "2026-06-21T04:22:10.717Z",
+    "requirementCount": 4
+  },
+  {
+    "id": "proj-growth",
+    "name": "用户增长",
+    "description": "用户增长策略",
+    "leadId": "user-pm-001",
+    "leadName": "张明",
+    "isActive": true,
+    "createdAt": "2026-06-21T04:22:10.717Z",
+    "requirementCount": 4
+  },
+  {
+    "id": "proj-data",
+    "name": "数据平台",
+    "description": "数据处理平台",
+    "leadId": "user-pm-001",
+    "leadName": "张明",
+    "isActive": true,
+    "createdAt": "2026-06-21T04:22:10.717Z",
+    "requirementCount": 4
+  },
+  {
+    "id": "proj-risk",
+    "name": "风控系统",
+    "description": "风险控制系统",
+    "leadId": "user-pm-001",
+    "leadName": "张明",
+    "isActive": true,
+    "createdAt": "2026-06-21T04:22:10.717Z",
+    "requirementCount": 3
+  },
+  {
+    "id": "proj-merchant",
+    "name": "商家后台",
+    "description": "商家管理后台",
+    "leadId": "user-pm-001",
+    "leadName": "张明",
+    "isActive": true,
+    "createdAt": "2026-06-21T04:22:10.717Z",
+    "requirementCount": 2
+  }
+]

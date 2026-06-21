@@ -29,6 +29,10 @@ build/
 # CodeGraph
 .codegraph/
 
+# Database
+*.db
+*.sqlite
+
 # Temp
 tmp/
 temp/

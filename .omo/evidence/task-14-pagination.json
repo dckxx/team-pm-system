@@ -1,0 +1,131 @@
+{
+  "data": [
+    {
+      "id": "9ed4e7ec-4daa-4e40-8d13-410612cd8936",
+      "code": "REQ-2025-017",
+      "title": "风控黑白名单管理",
+      "description": "建设风控黑白名单管理系统，支持名单批量导入、自动过期、分级管理，提供查询和监控告警能力。",
+      "projectId": "proj-risk",
+      "priority": "P1",
+      "status": "testing",
+      "creatorId": "user-pm-001",
+      "plannedLaunch": "2025-06-01",
+      "plannedOnline": null,
+      "actualDevStart": null,
+      "actualDevEnd": null,
+      "actualTestStart": null,
+      "actualTestEnd": null,
+      "actualOnline": null,
+      "isDeleted": false,
+      "version": 0,
+      "createdAt": "2026-06-21T04:22:11.007Z",
+      "updatedAt": "2026-06-21T04:22:11.007Z",
+      "projectName": "风控系统",
+      "creatorName": "张明",
+      "tags": [
+        "风控",
+        "名单",
+        "黑白名单"
+      ],
+      "developers": [
+        {
+          "id": "77de813a-5fd2-4725-909a-a1b8ae7979d2",
+          "requirementId": "9ed4e7ec-4daa-4e40-8d13-410612cd8936",
+          "userId": "user-dev-chenwei",
+          "userName": "陈伟",
+          "userEmail": null,
+          "role": "backend"
+        }
+      ]
+    },
+    {
+      "id": "05ec8143-be71-4acc-ba68-978df7cd2ac3",
+      "code": "REQ-2025-016",
+      "title": "商家评分系统",
+      "description": "设计商家评分模型，综合考虑交易量、好评率、纠纷率、响应时间等维度，为商家分层运营提供数据支撑。",
+      "projectId": "proj-merchant",
+      "priority": "P2",
+      "status": "developing",
+      "creatorId": "user-pm-001",
+      "plannedLaunch": "2025-06-03",
+      "plannedOnline": null,
+      "actualDevStart": null,
+      "actualDevEnd": null,
+      "actualTestStart": null,
+      "actualTestEnd": null,
+      "actualOnline": null,
+      "isDeleted": false,
+      "version": 0,
+      "createdAt": "2026-06-21T04:22:10.989Z",
+      "updatedAt": "2026-06-21T04:22:10.989Z",
+      "projectName": "商家后台",
+      "creatorName": "张明",
+      "tags": [
+        "评分",
+        "商家",
+        "模型"
+      ],
+      "developers": [
+        {
+          "id": "d20f0af3-209a-4e0b-bda7-ee6261f6f5f2",
+          "requirementId": "05ec8143-be71-4acc-ba68-978df7cd2ac3",
+          "userId": "user-dev-chenwei",
+          "userName": "陈伟",
+          "userEmail": null,
+          "role": "backend"
+        },
+        {
+          "id": "50ea2f8a-8591-4105-be98-bbf3f41a5be4",
+          "requirementId": "05ec8143-be71-4acc-ba68-978df7cd2ac3",
+          "userId": "user-dev-wangting",
+          "userName": "王婷",
+          "userEmail": null,
+          "role": "frontend"
+        }
+      ]
+    },
+    {
+      "id": "062e460d-038f-45b8-80c3-f4969ee29fe8",
+      "code": "REQ-2025-015",
+      "title": "用户画像V2",
+      "description": "用户画像系统V2版本升级，新增实时标签计算、人群圈选、画像API开放能力。",
+      "projectId": "proj-data",
+      "priority": "P2",
+      "status": "launched",
+      "creatorId": "user-pm-001",
+      "plannedLaunch": null,
+      "plannedOnline": "2025-06-05",
+      "actualDevStart": null,
+      "actualDevEnd": null,
+      "actualTestStart": null,
+      "actualTestEnd": null,
+      "actualOnline": null,
+      "isDeleted": false,
+      "version": 0,
+      "createdAt": "2026-06-21T04:22:10.972Z",
+      "updatedAt": "2026-06-21T04:22:10.972Z",
+      "projectName": "数据平台",
+      "creatorName": "张明",
+      "tags": [
+        "画像",
+        "数据",
+        "升级"
+      ],
+      "developers": [
+        {
+          "id": "ff16a80c-c589-4ebf-be22-746cae3fb53b",
+          "requirementId": "062e460d-038f-45b8-80c3-f4969ee29fe8",
+          "userId": "user-dev-liuyang",
+          "userName": "刘洋",
+          "userEmail": null,
+          "role": "data"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "pageSize": 3,
+    "total": 17
+  }
+}

@@ -1,0 +1,53 @@
+Task 35 — Docker Compose Final + README
+=========================================
+Date: 2026-06-21
+Status: Complete (not run — no Docker daemon on Windows build host)
+
+## Files Created / Modified
+
+### docker-compose.yml
+- Removed deprecated `version` key (not present in original)
+- Added `target: dev` to both `backend` and `frontend` build sections (explicit stage selection)
+- Added `db-data` named volume for SQLite data persistence
+- Mounted `db-data:/app/packages/backend/data` on backend service
+- Overrode `DATABASE_URL=file:./data/dev.db` in backend environment to point to volume path
+- Kept existing bind mounts for source code (hot-reload) and anonymous node_modules volumes
+- `depends_on` already present (frontend → backend)
+
+### Dockerfile.backend
+- Multi-stage: base → builder → dev (default) / prod
+- base: node:20-alpine, corepack pnpm, install dependencies (layer caching via manifest-only copy)
+- builder: compiles shared package (tsc), generates Prisma client, runs nest build
+- dev: extends builder, same CMD as before (`pnpm run start:dev`)
+- prod: fresh base, copies only dist + prisma + shared from builder, installs --prod, prisma generate, CMD `node dist/main`
+
+### Dockerfile.frontend
+- Multi-stage: base → builder → dev (default) / prod
+- base: node:20-alpine, corepack pnpm, install dependencies
+- builder: compiles shared package (tsc), runs vite build (outputs dist/)
+- dev: extends builder, same CMD as before (`pnpm run dev -- --host`)
+- prod: nginx:alpine, copies dist/ to /usr/share/nginx/html, applies nginx.conf, CMD `nginx -g "daemon off;"`
+
+### nginx.conf (new)
+- listen 80, root /usr/share/nginx/html
+- SPA try_files: `$uri $uri/ /index.html`
+- /api/ proxy_pass to http://backend:3000 with standard headers
+
+### README.md (new)
+- Project name: 蓝本 - 团队项目管理系统
+- Tech stack table (Vue3/NestJS/Prisma/SQLite/Docker/pnpm)
+- Quick start: pnpm install → prisma db push → prisma db seed → pnpm dev
+- Docker deploy: docker-compose up -d
+- Pre-set accounts table with 5 users
+- Project structure tree
+
+## Notable Decisions
+1. SQLite data persisted via named volume `db-data` mounted at `/app/packages/backend/data` with `DATABASE_URL=file:./data/dev.db` override — avoids conflict with bind-mounted source code at `/app/packages/backend/`
+2. Prod stage uses `node dist/main` (not `nest start`) to avoid requiring @nestjs/cli at runtime
+3. Builder stage builds shared package first (tsc) before backend/frontend builds since workspace packages resolve via symlinks
+4. No .github/workflows/ (out of scope per task spec)
+5. No emojis in README per task spec
+
+## QA Verification
+Docker build not executed (host OS: Windows without Docker Desktop running).
+Manual verification of Dockerfile syntax and compose structure completed.

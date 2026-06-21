@@ -1,0 +1,319 @@
+{
+  "schema_version": 2,
+  "active_work_id": "product-grade-project-128531dd",
+  "works": {
+    "product-grade-project-128531dd": {
+      "work_id": "product-grade-project-128531dd",
+      "active_plan": "E:\\workspace\\op\\team-pm-system\\.omo\\plans\\product-grade-project.md",
+      "plan_name": "product-grade-project",
+      "status": "completed",
+      "started_at": "2026-06-21T01:45:03.281Z",
+      "updated_at": "2026-06-21T07:46:53.264Z",
+      "session_ids": [
+        "opencode:ses_11a60bae0ffelJi4lzPqH9vXLR"
+      ],
+      "session_origins": {
+        "opencode:ses_11a60bae0ffelJi4lzPqH9vXLR": "direct"
+      },
+      "agent": "atlas",
+      "task_sessions": {
+        "todo:1": {
+          "task_key": "todo:1",
+          "task_label": "1",
+          "task_title": "Monorepo 骨架搭建 — pnpm workspace + 根配置",
+          "session_id": "opencode:ses_11824b0e0ffeA6kVf8w20MxWK0",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T01:48:57.866Z",
+          "started_at": "2026-06-21T01:47:19.334Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T01:48:57.866Z",
+          "elapsed_ms": 98532
+        },
+        "todo:8": {
+          "task_key": "todo:8",
+          "task_label": "8",
+          "task_title": "Docker 开发环境 — docker-compose + Dockerfiles",
+          "session_id": "opencode:ses_118249bd3ffebHrRlCzt5fG8Nd",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T01:48:58.327Z",
+          "started_at": "2026-06-21T01:48:26.535Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T01:48:58.327Z",
+          "elapsed_ms": 31792
+        },
+        "todo:2": {
+          "task_key": "todo:2",
+          "task_label": "2",
+          "task_title": "Shared 共享类型包 — 枚举、接口、DTO、常量、校验",
+          "session_id": "opencode:ses_11821c55effewQ0YHK2sNYLsu9",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T02:58:11.891Z",
+          "started_at": "2026-06-21T01:51:07.622Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T02:58:11.891Z",
+          "elapsed_ms": 4024269
+        },
+        "todo:5": {
+          "task_key": "todo:5",
+          "task_label": "5",
+          "task_title": "NestJS 项目脚手架 — PrismaService + 模块壳",
+          "session_id": "opencode:ses_11821aa0fffeSOf5JP2vQLsg1q",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T02:58:12.644Z",
+          "started_at": "2026-06-21T02:01:30.729Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T02:58:12.644Z",
+          "elapsed_ms": 3401915
+        },
+        "todo:6": {
+          "task_key": "todo:6",
+          "task_label": "6",
+          "task_title": "Vue 3 项目脚手架 — Vite + Router + Pinia + Tailwind 入口",
+          "session_id": "opencode:ses_118219152ffeoWRoIA1uyeKh3f",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T03:00:09.893Z",
+          "started_at": "2026-06-21T02:57:36.977Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T03:00:09.893Z",
+          "elapsed_ms": 152916
+        },
+        "todo:3": {
+          "task_key": "todo:3",
+          "task_label": "3",
+          "task_title": "Prisma Schema + 数据库迁移 — 所有实体 + 关联表",
+          "session_id": "opencode:ses_117e0c881ffetu6WXsg5eXhlx1",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "started_at": "2026-06-21T02:59:57.693Z",
+          "status": "completed",
+          "updated_at": "2026-06-21T03:19:16.258Z",
+          "ended_at": "2026-06-21T03:19:16.258Z",
+          "elapsed_ms": 1158565
+        },
+        "todo:7": {
+          "task_key": "todo:7",
+          "task_label": "7",
+          "task_title": "Tailwind 设计令牌注入 — DESIGN.md → tailwind.config.js",
+          "session_id": "opencode:ses_117e09b53ffeRKX3BjcZ1H6tLm",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T03:19:16.470Z",
+          "started_at": "2026-06-21T03:01:27.427Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T03:19:16.470Z",
+          "elapsed_ms": 1069043
+        },
+        "todo:4": {
+          "task_key": "todo:4",
+          "task_label": "4",
+          "task_title": "Prisma 种子脚本 — 原型数据填充",
+          "session_id": "opencode:ses_117cf513effeljjRRBXuzNEfSU",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T03:27:28.673Z",
+          "started_at": "2026-06-21T03:27:10.596Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T03:27:28.673Z",
+          "elapsed_ms": 18077
+        },
+        "todo:9": {
+          "task_key": "todo:9",
+          "task_label": "9",
+          "task_title": "Auth 认证模块 — JWT + Passport + 登录",
+          "session_id": "opencode:ses_117c6e7aaffeVMWM6ViblJ4kAy",
+          "updated_at": "2026-06-21T03:53:24.570Z",
+          "started_at": "2026-06-21T03:50:06.090Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T03:53:24.570Z",
+          "elapsed_ms": 198480
+        },
+        "todo:10": {
+          "task_key": "todo:10",
+          "task_label": "10",
+          "task_title": "User 用户模块 — 列表/详情/更新",
+          "session_id": "opencode:ses_117afc1a2ffeoYK6g1kkJby0Q9",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-21T03:59:10.270Z",
+          "started_at": "2026-06-21T03:58:24.123Z",
+          "status": "completed",
+          "ended_at": "2026-06-21T03:59:10.270Z",
+          "elapsed_ms": 46147
+        },
+        "todo:14": {
+          "task_key": "todo:14",
+          "task_label": "14",
+          "task_title": "Requirement CRUD + 状态流转 + 乐观锁",
+          "session_id": "opencode:ses_117aa208affeFnCnrESwLnVmon",
+          "agent": "Sisyphus-Junior",
+          "category": "deep",
+          "updated_at": "2026-06-21T04:20:32.863Z",
+          "started_at": "2026-06-21T04:20:32.863Z",
+          "status": "running"
+        }
+      },
+      "ended_at": "2026-06-21T07:46:53.264Z",
+      "elapsed_ms": 21709983
+    }
+  },
+  "active_plan": "E:\\workspace\\op\\team-pm-system\\.omo\\plans\\product-grade-project.md",
+  "started_at": "2026-06-21T01:45:03.281Z",
+  "status": "completed",
+  "updated_at": "2026-06-21T07:46:53.264Z",
+  "session_ids": [
+    "opencode:ses_11a60bae0ffelJi4lzPqH9vXLR"
+  ],
+  "session_origins": {
+    "opencode:ses_11a60bae0ffelJi4lzPqH9vXLR": "direct"
+  },
+  "plan_name": "product-grade-project",
+  "task_sessions": {
+    "todo:1": {
+      "task_key": "todo:1",
+      "task_label": "1",
+      "task_title": "Monorepo 骨架搭建 — pnpm workspace + 根配置",
+      "session_id": "opencode:ses_11824b0e0ffeA6kVf8w20MxWK0",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T01:48:57.866Z",
+      "started_at": "2026-06-21T01:47:19.334Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T01:48:57.866Z",
+      "elapsed_ms": 98532
+    },
+    "todo:8": {
+      "task_key": "todo:8",
+      "task_label": "8",
+      "task_title": "Docker 开发环境 — docker-compose + Dockerfiles",
+      "session_id": "opencode:ses_118249bd3ffebHrRlCzt5fG8Nd",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T01:48:58.327Z",
+      "started_at": "2026-06-21T01:48:26.535Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T01:48:58.327Z",
+      "elapsed_ms": 31792
+    },
+    "todo:2": {
+      "task_key": "todo:2",
+      "task_label": "2",
+      "task_title": "Shared 共享类型包 — 枚举、接口、DTO、常量、校验",
+      "session_id": "opencode:ses_11821c55effewQ0YHK2sNYLsu9",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T02:58:11.891Z",
+      "started_at": "2026-06-21T01:51:07.622Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T02:58:11.891Z",
+      "elapsed_ms": 4024269
+    },
+    "todo:5": {
+      "task_key": "todo:5",
+      "task_label": "5",
+      "task_title": "NestJS 项目脚手架 — PrismaService + 模块壳",
+      "session_id": "opencode:ses_11821aa0fffeSOf5JP2vQLsg1q",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T02:58:12.644Z",
+      "started_at": "2026-06-21T02:01:30.729Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T02:58:12.644Z",
+      "elapsed_ms": 3401915
+    },
+    "todo:6": {
+      "task_key": "todo:6",
+      "task_label": "6",
+      "task_title": "Vue 3 项目脚手架 — Vite + Router + Pinia + Tailwind 入口",
+      "session_id": "opencode:ses_118219152ffeoWRoIA1uyeKh3f",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T03:00:09.893Z",
+      "started_at": "2026-06-21T02:57:36.977Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T03:00:09.893Z",
+      "elapsed_ms": 152916
+    },
+    "todo:3": {
+      "task_key": "todo:3",
+      "task_label": "3",
+      "task_title": "Prisma Schema + 数据库迁移 — 所有实体 + 关联表",
+      "session_id": "opencode:ses_117e0c881ffetu6WXsg5eXhlx1",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "started_at": "2026-06-21T02:59:57.693Z",
+      "status": "completed",
+      "updated_at": "2026-06-21T03:19:16.258Z",
+      "ended_at": "2026-06-21T03:19:16.258Z",
+      "elapsed_ms": 1158565
+    },
+    "todo:7": {
+      "task_key": "todo:7",
+      "task_label": "7",
+      "task_title": "Tailwind 设计令牌注入 — DESIGN.md → tailwind.config.js",
+      "session_id": "opencode:ses_117e09b53ffeRKX3BjcZ1H6tLm",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T03:19:16.470Z",
+      "started_at": "2026-06-21T03:01:27.427Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T03:19:16.470Z",
+      "elapsed_ms": 1069043
+    },
+    "todo:4": {
+      "task_key": "todo:4",
+      "task_label": "4",
+      "task_title": "Prisma 种子脚本 — 原型数据填充",
+      "session_id": "opencode:ses_117cf513effeljjRRBXuzNEfSU",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T03:27:28.673Z",
+      "started_at": "2026-06-21T03:27:10.596Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T03:27:28.673Z",
+      "elapsed_ms": 18077
+    },
+    "todo:9": {
+      "task_key": "todo:9",
+      "task_label": "9",
+      "task_title": "Auth 认证模块 — JWT + Passport + 登录",
+      "session_id": "opencode:ses_117c6e7aaffeVMWM6ViblJ4kAy",
+      "updated_at": "2026-06-21T03:53:24.570Z",
+      "started_at": "2026-06-21T03:50:06.090Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T03:53:24.570Z",
+      "elapsed_ms": 198480
+    },
+    "todo:10": {
+      "task_key": "todo:10",
+      "task_label": "10",
+      "task_title": "User 用户模块 — 列表/详情/更新",
+      "session_id": "opencode:ses_117afc1a2ffeoYK6g1kkJby0Q9",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-21T03:59:10.270Z",
+      "started_at": "2026-06-21T03:58:24.123Z",
+      "status": "completed",
+      "ended_at": "2026-06-21T03:59:10.270Z",
+      "elapsed_ms": 46147
+    },
+    "todo:14": {
+      "task_key": "todo:14",
+      "task_label": "14",
+      "task_title": "Requirement CRUD + 状态流转 + 乐观锁",
+      "session_id": "opencode:ses_117aa208affeFnCnrESwLnVmon",
+      "agent": "Sisyphus-Junior",
+      "category": "deep",
+      "updated_at": "2026-06-21T04:20:32.863Z",
+      "started_at": "2026-06-21T04:20:32.863Z",
+      "status": "running"
+    }
+  },
+  "agent": "atlas",
+  "ended_at": "2026-06-21T07:46:53.264Z",
+  "elapsed_ms": 21709983
+}

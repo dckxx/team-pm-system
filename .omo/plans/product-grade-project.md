@@ -222,7 +222,7 @@ Max Concurrent: 10（Wave 1）
 
 ## TODOs
 
-- [ ] 1. Monorepo 骨架搭建 — pnpm workspace + 根配置
+- [x] 1. Monorepo 骨架搭建 — pnpm workspace + 根配置
 
   **做什么**:
   - 创建根目录 `package.json`（`"private": true`, `"workspaces": ["packages/*"]`）
@@ -278,7 +278,7 @@ Max Concurrent: 10（Wave 1）
   - 消息: `chore: init pnpm monorepo with packages scaffold`
   - 文件: `package.json`, `pnpm-workspace.yaml`, `tsconfig.base.json`, `packages/*/package.json`
 
-- [ ] 2. Shared 共享类型包 — 枚举、接口、DTO、常量、校验
+- [x] 2. Shared 共享类型包 — 枚举、接口、DTO、常量、校验
 
   **做什么**:
   - 在 `packages/shared/` 创建完整 TypeScript 类型定义：
@@ -345,7 +345,7 @@ Max Concurrent: 10（Wave 1）
   - 消息: `feat(shared): add enums, types, DTOs, constants, validators`
   - 文件: `packages/shared/src/*`
 
-- [ ] 3. Prisma Schema + 数据库迁移 — 所有实体 + 关联表
+- [x] 3. Prisma Schema + 数据库迁移 — 所有实体 + 关联表
 
   **做什么**:
   - 在 `packages/backend/prisma/schema.prisma` 定义完整数据模型：
@@ -404,7 +404,7 @@ Max Concurrent: 10（Wave 1）
   - 消息: `feat(db): add Prisma schema with all entities and junction table`
   - 文件: `packages/backend/prisma/schema.prisma`, `packages/backend/prisma/migrations/*`
 
-- [ ] 4. Prisma 种子脚本 — 原型数据填充
+- [x] 4. Prisma 种子脚本 — 原型数据填充
 
   **做什么**:
   - 创建 `packages/backend/prisma/seed.ts`：种子数据来源 `team-project-management.html`
@@ -439,7 +439,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `feat(db): add seed script with prototype demo data`
 
-- [ ] 5. NestJS 项目脚手架 — PrismaService + 模块壳
+- [x] 5. NestJS 项目脚手架 — PrismaService + 模块壳
 
   **做什么**:
   - `src/main.ts`（bootstrap, CORS, ValidationPipe）
@@ -470,7 +470,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `feat(backend): scaffold NestJS project with all module shells`
 
-- [ ] 6. Vue 3 项目脚手架 — Vite + Router + Pinia + Tailwind 入口
+- [x] 6. Vue 3 项目脚手架 — Vite + Router + Pinia + Tailwind 入口
 
   **做什么**:
   - Vite + Vue 3 + TS 项目初始化
@@ -498,7 +498,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `feat(frontend): scaffold Vue 3 project with Vite, Router, Pinia`
 
-- [ ] 7. Tailwind 设计令牌注入 — DESIGN.md → tailwind.config.ts
+- [x] 7. Tailwind 设计令牌注入 — DESIGN.md → tailwind.config.ts
 
   **做什么**:
   - `tailwind.config.ts` 注入所有设计令牌：5 semantic colors (含 tonal ramp), typography(display/headline/title/body/label), boxShadow(card-hover/modal/dropdown), borderRadius(8px/4px), transitionTimingFunction(ease-standard), screens(sm/md/lg/xl)
@@ -530,7 +530,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `feat(frontend): inject design tokens into Tailwind config`
 
-- [ ] 8. Docker 开发环境 — docker-compose + Dockerfiles
+- [x] 8. Docker 开发环境 — docker-compose + Dockerfiles
 
   **做什么**:
   - 根目录 `docker-compose.yml`：frontend(5173) + backend(3000)
@@ -557,7 +557,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `chore: add Docker dev environment`
 
-- [ ] 9. Auth 认证模块 — JWT + Passport + 登录
+- [x] 9. Auth 认证模块 — JWT + Passport + 登录
 
   **做什么**:
   - `auth/auth.module.ts`：导入 PassportModule, JwtModule（secret + expiresIn 从 .env 读取）
@@ -592,7 +592,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `feat(backend): implement JWT auth with login`
 
-- [ ] 10. User 用户模块 — 列表/详情/更新
+- [x] 10. User 用户模块 — 列表/详情/更新
 
   **做什么**:
   - GET /api/users（列表含 devRoles + requirementCount）
@@ -614,7 +614,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(backend): implement users CRUD`
 
-- [ ] 11. Project 项目模块 — CRUD
+- [x] 11. Project 项目模块 — CRUD
 
   **做什么**: GET/POST/PATCH /api/projects；每个项目含 id, name, description, leadId, isActive, requirementCount
 
@@ -626,7 +626,7 @@ Max Concurrent: 10（Wave 1）
   **QA 场景**: curl GET /api/projects → 200, data.length≥5
   **提交**: YES — `feat(backend): implement projects module`
 
-- [ ] 12. RBAC 权限守卫 — @Roles 装饰器 + RolesGuard
+- [x] 12. RBAC 权限守卫 — @Roles 装饰器 + RolesGuard
 
   **做什么**:
   - `auth/roles.decorator.ts`：`@Roles('pm')` 装饰器
@@ -648,7 +648,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(backend): implement RBAC roles guard`
 
-- [ ] 13. Prisma 软删除中间件 — 全局 is_deleted=false 过滤
+- [x] 13. Prisma 软删除中间件 — 全局 is_deleted=false 过滤
 
   **做什么**:
   - PrismaService 注册 `$use` 中间件：Requirement 所有 find* 自动追加 `is_deleted: false`
@@ -668,7 +668,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(backend): add Prisma soft-delete middleware`
 
-- [ ] 14. Requirement CRUD + 状态流转 + 乐观锁
+- [x] 14. Requirement CRUD + 状态流转 + 乐观锁
 
   **做什么**:
   - `requirements/requirements.controller.ts`：
@@ -717,7 +717,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `feat(backend): implement requirement CRUD with state machine and optimistic locking`
 
-- [ ] 15. Comment 评论模块 + @提及
+- [x] 15. Comment 评论模块 + @提及
 
   **做什么**:
   - `comments/comments.controller.ts`：
@@ -745,7 +745,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(backend): implement comments with @mention parsing`
 
-- [ ] 16. StatusTransition 审计日志
+- [x] 16. StatusTransition 审计日志
 
   **做什么**: GET /api/requirements/:id/transitions（只读审计时间线）; 每条含 fromStatus, toStatus, operatorId, operatorName, comment, createdAt；在 Requirement Service 中自动记录每次流转
 
@@ -757,7 +757,7 @@ Max Concurrent: 10（Wave 1）
   **QA 场景**: curl GET /api/requirements/:id/transitions → 200 + 含首条创建记录
   **提交**: YES — `feat(backend): implement status transition audit log`
 
-- [ ] 17. Dashboard + Reports 统计端点
+- [x] 17. Dashboard + Reports 统计端点
 
   **做什么**:
   - GET /api/dashboard/stats（仪表盘）：totalRequirements, pendingReview, developing, testing, launched, myTasks(当前用户), avgCycleTime
@@ -781,7 +781,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(backend): implement dashboard and reports stats endpoints`
 
-- [ ] 18. CSV 导出端点 — 需求列表导出
+- [x] 18. CSV 导出端点 — 需求列表导出
 
   **做什么**: GET /api/requirements/export?status=&priority=&projectId=（流式 CSV 响应）；CSV 列：编号/标题/状态/优先级/项目/创建人/计划上线/实际上线/标签；Content-Type: text/csv；后端生成 CSV 字符串流式返回
 
@@ -799,7 +799,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(backend): implement CSV export endpoint`
 
-- [ ] 19. Vue Router + 布局组件 — 侧边栏 + 导航 + 全局 Layout
+- [x] 19. Vue Router + 布局组件 — 侧边栏 + 导航 + 全局 Layout
 
   **做什么**:
   - `src/App.vue`：Layout 组件（侧边栏 256px + 主内容区）
@@ -828,7 +828,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): add Vue Router with sidebar layout and auth guard`
 
-- [ ] 20. API Client + Axios 拦截器
+- [x] 20. API Client + Axios 拦截器
 
   **做什么**:
   - `src/api/client.ts`：Axios 实例（baseURL: /api, timeout: 10s）
@@ -853,7 +853,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): add Axios client with auth interceptors`
 
-- [ ] 21. Pinia 状态管理 stores — 5 个 store 模块
+- [x] 21. Pinia 状态管理 stores — 5 个 store 模块
 
   **做什么**:
   - `stores/auth.ts`：user, token, login(), logout(), isAuthenticated getter
@@ -876,7 +876,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement Pinia stores`
 
-- [ ] 22. 全局基础组件库 — Button, Tag, Card, Input, Modal, Table 等
+- [x] 22. 全局基础组件库 — Button, Tag, Card, Input, Modal, Table 等
 
   **做什么**:
   - 创建 9 个全局组件（按 DESIGN.md 定义）：
@@ -907,7 +907,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): build 9 base components from design system`
 
-- [ ] 23. 登录页 + 认证流程
+- [x] 23. 登录页 + 认证流程
 
   **做什么**:
   - `views/Login.vue`：居中卡片布局（AppCard）、邮箱输入框、密码框、登录按钮(loading 态)、错误提示
@@ -932,7 +932,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement login page with auth flow`
 
-- [ ] 24. 仪表盘视图 — 统计卡片 + 最近投产侧栏
+- [x] 24. 仪表盘视图 — 统计卡片 + 最近投产侧栏
 
   **做什么**:
   - `views/Dashboard.vue`：
@@ -957,7 +957,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement dashboard view`
 
-- [ ] 25. 需求列表 + 筛选栏
+- [x] 25. 需求列表 + 筛选栏
 
   **做什么**:
   - `views/Requirements.vue`：
@@ -984,7 +984,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement requirements list with filters`
 
-- [ ] 26. 创建/编辑需求表单
+- [x] 26. 创建/编辑需求表单
 
   **做什么**:
   - `views/RequirementForm.vue`（Modal or 独立路由 /requirements/new, /requirements/:id/edit）：
@@ -1013,7 +1013,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement requirement create/edit form`
 
-- [ ] 27. 需求详情 + 评论时间线
+- [x] 27. 需求详情 + 评论时间线
 
   **做什么**:
   - `views/RequirementDetail.vue`（Modal or 独立路由 /requirements/:id）：
@@ -1044,7 +1044,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement requirement detail with timeline`
 
-- [ ] 28. 看板视图 — 拖拽 + 二次确认
+- [x] 28. 看板视图 — 拖拽 + 二次确认
 
   **做什么**:
   - `views/Kanban.vue`：
@@ -1076,7 +1076,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement kanban view with drag-and-drop`
 
-- [ ] 29. 团队管理视图
+- [x] 29. 团队管理视图
 
   **做什么**:
   - `views/Team.vue`：
@@ -1100,7 +1100,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement team management view`
 
-- [ ] 30. 统计报表视图 — ECharts 图表
+- [x] 30. 统计报表视图 — ECharts 图表
 
   **做什么**:
   - `views/Reports.vue`：
@@ -1126,7 +1126,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement reports view with ECharts`
 
-- [ ] 31. 响应式布局适配 — 3 断点
+- [x] 31. 响应式布局适配 — 3 断点
 
   **做什么**:
   - 断点：≥1024px (desktop sidebar展开), 768-1023px (tablet sidebar折叠➔汉堡菜单), <768px (mobile 全屏)
@@ -1152,7 +1152,7 @@ Max Concurrent: 10（Wave 1）
   ```
   **提交**: YES — `feat(frontend): implement responsive layout for 3 breakpoints`
 
-- [ ] 32. 前端测试 (Vitest) — 组件 + Store 单元测试
+- [x] 32. 前端测试 (Vitest) — 组件 + Store 单元测试
 
   **做什么**:
   - 配置 Vitest（jsdom 环境）+ @vue/test-utils
@@ -1172,7 +1172,7 @@ Max Concurrent: 10（Wave 1）
   **QA 场景**: `pnpm test:fe` → all pass
   **提交**: YES — `test(frontend): add Vitest unit tests`
 
-- [ ] 33. 后端测试 (Jest) — Controller + Service 单元测试
+- [x] 33. 后端测试 (Jest) — Controller + Service 单元测试
 
   **做什么**:
   - 配置 Jest（ts-jest）+ @nestjs/testing
@@ -1188,7 +1188,7 @@ Max Concurrent: 10（Wave 1）
   **QA 场景**: `pnpm test:be` → all pass
   **提交**: YES — `test(backend): add Jest unit tests`
 
-- [ ] 34. E2E QA 全场景 — Playwright + curl 覆盖全部 31 个 QA Scenarios
+- [x] 34. E2E QA 全场景 — Playwright + curl 覆盖全部 31 个 QA Scenarios
 
   **做什么**:
   - 运行所有前序任务的 QA Scenarios（至少 31 个）
@@ -1211,7 +1211,7 @@ Max Concurrent: 10（Wave 1）
 
   **提交**: YES — `test(e2e): run all QA scenarios with evidence capture`
 
-- [ ] 35. Docker Compose 终态 + README
+- [x] 35. Docker Compose 终态 + README
 
   **做什么**:
   - 更新 `docker-compose.yml`：添加 volumes（sqlite 数据持久化）+ env_file
@@ -1240,19 +1240,19 @@ Max Concurrent: 10（Wave 1）
 
 > 4 review agents run in PARALLEL. ALL must APPROVE. Present consolidated results to user and get explicit "okay" before completing.
 
-- [ ] F1. **Plan Compliance Audit** — `oracle`
+- [x] F1. **Plan Compliance Audit** — `oracle`
   Read plan end-to-end. For each "Must Have": verify implementation exists. For each "Must NOT Have": search codebase for forbidden patterns — reject with file:line if found. Check evidence files in .omo/evidence/. Compare deliverables against plan.
   Output: `Must Have [N/N] | Must NOT Have [N/N] | Tasks [N/N] | VERDICT: APPROVE/REJECT`
 
-- [ ] F2. **Code Quality Review** — `unspecified-high`
+- [x] F2. **Code Quality Review** — `unspecified-high`
   Run `tsc --noEmit` + ESLint + `pnpm test:fe && pnpm test:be`. Review all changed files for: `as any`, `@ts-ignore`, empty catches, console.log in prod, commented-out code, unused imports. Check AI slop: excessive comments, over-abstraction, generic names (data/result/item/temp).
   Output: `Build [PASS/FAIL] | Lint [PASS/FAIL] | Tests [N pass/N fail] | Files [N clean/N issues] | VERDICT`
 
-- [ ] F3. **Real Manual QA** — `unspecified-high` (+ `playwright` skill)
+- [x] F3. **Real Manual QA** — `unspecified-high` (+ `playwright` skill)
   Start from clean state. Execute EVERY QA scenario from EVERY task — follow exact steps, capture evidence. Test cross-task integration (features working together). Test edge cases: empty state, invalid input, rapid actions, concurrent access. Save to `.omo/evidence/final-qa/`.
   Output: `Scenarios [N/N pass] | Integration [N/N] | Edge Cases [N tested] | VERDICT`
 
-- [ ] F4. **Scope Fidelity Check** — `deep`
+- [x] F4. **Scope Fidelity Check** — `deep`
   For each task: read "What to do", read actual diff (git log/diff). Verify 1:1 — everything in spec was built (no missing), nothing beyond spec was built (no creep). Check "Must NOT do" compliance. Detect cross-task contamination. Flag unaccounted changes.
   Output: `Tasks [N/N compliant] | Contamination [CLEAN/N issues] | Unaccounted [CLEAN/N files] | VERDICT`
 

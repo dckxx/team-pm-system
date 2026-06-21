@@ -1,0 +1,73 @@
+{
+  "data": [
+    {
+      "id": "user-pm-001",
+      "name": "张明",
+      "email": "zhangming@example.com",
+      "role": "pm",
+      "devRoles": [],
+      "avatarUrl": null,
+      "isActive": true,
+      "createdAt": "2026-06-21T04:22:10.701Z",
+      "updatedAt": "2026-06-21T04:22:10.701Z",
+      "requirementCount": 0
+    },
+    {
+      "id": "user-dev-lihao",
+      "name": "李浩",
+      "email": "lihao@example.com",
+      "role": "dev",
+      "devRoles": [
+        "frontend"
+      ],
+      "avatarUrl": null,
+      "isActive": true,
+      "createdAt": "2026-06-21T04:22:10.701Z",
+      "updatedAt": "2026-06-21T04:22:10.701Z",
+      "requirementCount": 5
+    },
+    {
+      "id": "user-dev-wangting",
+      "name": "王婷",
+      "email": "wangting@example.com",
+      "role": "dev",
+      "devRoles": [
+        "frontend",
+        "backend"
+      ],
+      "avatarUrl": null,
+      "isActive": true,
+      "createdAt": "2026-06-21T04:22:10.701Z",
+      "updatedAt": "2026-06-21T04:22:10.701Z",
+      "requirementCount": 6
+    },
+    {
+      "id": "user-dev-chenwei",
+      "name": "陈伟",
+      "email": "chenwei@example.com",
+      "role": "dev",
+      "devRoles": [
+        "backend"
+      ],
+      "avatarUrl": null,
+      "isActive": true,
+      "createdAt": "2026-06-21T04:22:10.701Z",
+      "updatedAt": "2026-06-21T04:22:10.701Z",
+      "requirementCount": 8
+    },
+    {
+      "id": "user-dev-liuyang",
+      "name": "刘洋",
+      "email": "liuyang@example.com",
+      "role": "dev",
+      "devRoles": [
+        "data"
+      ],
+      "avatarUrl": null,
+      "isActive": true,
+      "createdAt": "2026-06-21T04:22:10.701Z",
+      "updatedAt": "2026-06-21T04:22:10.701Z",
+      "requirementCount": 5
+    }
+  ]
+}

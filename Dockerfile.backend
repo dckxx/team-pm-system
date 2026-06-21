@@ -1,0 +1,58 @@
+# Backend — NestJS multi-stage build
+# Targets: dev (default), prod
+
+# ── Base ──────────────────────────────────────────────────────────────────
+FROM node:20-alpine AS base
+
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+WORKDIR /app
+
+# ── Dependencies layer ────────────────────────────────────────────────────
+# Copy only manifest files first to maximise Docker layer caching
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY packages/backend/package.json  packages/backend/
+COPY packages/frontend/package.json packages/frontend/
+COPY packages/shared/package.json   packages/shared/
+
+RUN pnpm install --frozen-lockfile
+
+# ── Builder ───────────────────────────────────────────────────────────────
+FROM base AS builder
+
+# Shared package source + compile (must precede backend build)
+COPY packages/shared/src    packages/shared/src
+COPY packages/shared/tsconfig.json packages/shared/
+RUN cd packages/shared && npx tsc
+
+# Backend source + Prisma generate + Nest build
+COPY packages/backend       packages/backend
+RUN cd packages/backend && npx prisma generate && pnpm run build
+
+# ── Dev (target: dev) — source-mounted hot-reload ────────────────────────
+FROM builder AS dev
+
+EXPOSE 3000
+
+WORKDIR /app/packages/backend
+CMD ["pnpm", "run", "start:dev"]
+
+# ── Production (target: prod) — lean runtime ─────────────────────────────
+FROM base AS prod
+
+# Copy built artifacts from builder
+COPY --from=builder /app/packages/backend/dist     /app/packages/backend/dist
+COPY --from=builder /app/packages/backend/prisma    /app/packages/backend/prisma
+COPY --from=builder /app/packages/backend/package.json /app/packages/backend/package.json
+COPY --from=builder /app/packages/shared            /app/packages/shared
+
+# Install production dependencies only (smaller image)
+RUN pnpm install --frozen-lockfile --prod
+
+# Re-generate Prisma client for the correct platform
+RUN cd packages/backend && npx prisma generate
+
+EXPOSE 3000
+
+WORKDIR /app/packages/backend
+CMD ["node", "dist/main"]

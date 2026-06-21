@@ -1,0 +1,120 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// ─── User ───────────────────────────────────────────────────────────────────
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("dev") // pm | dev
+  devRoles  String   @default("[]")  // JSON array of DevRole strings
+  avatarUrl String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  requirementsAsDev  RequirementDeveloper[]
+  createdRequirements Requirement[]         @relation("Creator")
+  operatedTransitions StatusTransition[]
+  ledProjects         Project[]
+  comments            Comment[]
+}
+
+// ─── Project ────────────────────────────────────────────────────────────────
+model Project {
+  id          String   @id @default(uuid())
+  name        String
+  description String   @default("")
+  leadId      String
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  // Relations
+  lead         User           @relation(fields: [leadId], references: [id])
+  requirements Requirement[]
+}
+
+// ─── Requirement ────────────────────────────────────────────────────────────
+model Requirement {
+  id          String   @id @default(uuid())
+  code        String   @unique
+  title       String
+  description String   @default("")
+  projectId   String
+  priority    String   @default("P2")
+  status      String   @default("pending_review")
+  creatorId   String
+
+  plannedLaunch  String?
+  plannedOnline  String?
+  actualDevStart String?
+  actualDevEnd   String?
+  actualTestStart String?
+  actualTestEnd  String?
+  actualOnline   String?
+
+  tags      String  @default("[]") // JSON array
+  isDeleted Boolean @default(false)
+  version   Int     @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  project      Project               @relation(fields: [projectId], references: [id])
+  creator       User                  @relation("Creator", fields: [creatorId], references: [id])
+  developers    RequirementDeveloper[]
+  comments      Comment[]
+  transitions   StatusTransition[]
+}
+
+// ─── Junction: RequirementDeveloper ─────────────────────────────────────────
+model RequirementDeveloper {
+  id             String @id @default(uuid())
+  requirementId  String
+  userId         String
+  role           String // frontend | backend | data
+
+  // Relations
+  requirement Requirement @relation(fields: [requirementId], references: [id])
+  user        User        @relation(fields: [userId], references: [id])
+
+  // One developer per role per requirement
+  @@unique([requirementId, userId, role])
+}
+
+// ─── Comment ────────────────────────────────────────────────────────────────
+model Comment {
+  id            String   @id @default(uuid())
+  requirementId String
+  authorId      String
+  content       String
+  mentions      String   @default("[]") // JSON array
+  createdAt     DateTime @default(now())
+
+  // Relations
+  requirement Requirement @relation(fields: [requirementId], references: [id])
+  author      User        @relation(fields: [authorId], references: [id])
+}
+
+// ─── StatusTransition ───────────────────────────────────────────────────────
+model StatusTransition {
+  id            String    @id @default(uuid())
+  requirementId String
+  fromStatus    String?
+  toStatus      String
+  operatorId    String
+  comment       String?
+  createdAt     DateTime  @default(now())
+
+  // Relations
+  requirement Requirement @relation(fields: [requirementId], references: [id])
+  operator    User        @relation(fields: [operatorId], references: [id])
+}

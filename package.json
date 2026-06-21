@@ -1,0 +1,22 @@
+{
+  "name": "team-pm-system",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "echo 'use pnpm --filter'",
+    "build": "echo 'use pnpm --filter'",
+    "lint": "eslint . --ext .ts,.vue,.cjs",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+}

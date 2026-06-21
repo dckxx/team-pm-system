@@ -1,0 +1,1033 @@
+{
+  "columns": {
+    "pending_review": [
+      {
+        "id": "2ffea1dc-d224-4b3d-ba63-0ddfd33558cf",
+        "code": "REQ-2025-013",
+        "title": "消息通知中心",
+        "projectId": "proj-growth",
+        "projectName": "用户增长",
+        "priority": "P1",
+        "status": "pending_review",
+        "plannedLaunch": "2025-06-11",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.937Z",
+        "developers": [
+          {
+            "id": "7e9241fe-3175-4215-9168-69c7b1c1837e",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          },
+          {
+            "id": "58f217de-c390-47c2-8c40-c2151fd81143",
+            "userId": "user-dev-lihao",
+            "userName": "李浩",
+            "role": "frontend"
+          }
+        ]
+      },
+      {
+        "id": "49c00cbb-4a62-4bfd-8611-e6caf873a70d",
+        "code": "REQ-2025-009",
+        "title": "A/B测试平台",
+        "projectId": "proj-growth",
+        "projectName": "用户增长",
+        "priority": "P2",
+        "status": "pending_review",
+        "plannedLaunch": "2025-06-17",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.867Z",
+        "developers": [
+          {
+            "id": "06096d5c-9e47-4287-abb3-f4ea89bc126d",
+            "userId": "user-dev-wangting",
+            "userName": "王婷",
+            "role": "frontend"
+          }
+        ]
+      },
+      {
+        "id": "59caa290-25fe-4fb8-8d08-56bc6a1e32f8",
+        "code": "REQ-2025-008",
+        "title": "对账系统优化",
+        "projectId": "proj-payment",
+        "projectName": "支付中台",
+        "priority": "P1",
+        "status": "pending_review",
+        "plannedLaunch": "2025-06-18",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.853Z",
+        "developers": [
+          {
+            "id": "1ed7e130-8d0a-4b32-87f4-dbc1292dba32",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          }
+        ]
+      },
+      {
+        "id": "06188f86-acbe-440d-bd8d-1261974c05fd",
+        "code": "REQ-2025-007",
+        "title": "通知中心重构",
+        "projectId": "proj-growth",
+        "projectName": "用户增长",
+        "priority": "P2",
+        "status": "pending_review",
+        "plannedLaunch": null,
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.838Z",
+        "developers": [
+          {
+            "id": "6af41a61-e6d5-4e7a-a090-fea6454e338f",
+            "userId": "user-dev-lihao",
+            "userName": "李浩",
+            "role": "frontend"
+          }
+        ]
+      },
+      {
+        "id": "c3853883-13e9-4a22-8408-950bedf137a5",
+        "code": "REQ-2025-006",
+        "title": "权限管理模块升级",
+        "projectId": "proj-risk",
+        "projectName": "风控系统",
+        "priority": "P1",
+        "status": "pending_review",
+        "plannedLaunch": null,
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.824Z",
+        "developers": [
+          {
+            "id": "eb18d868-aaa6-4d47-8046-a9da0290a730",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          }
+        ]
+      },
+      {
+        "id": "8b6c7729-fadd-472b-91ae-baf62ed21a5f",
+        "code": "REQ-2025-003",
+        "title": "用户画像数据看板",
+        "projectId": "proj-data",
+        "projectName": "数据平台",
+        "priority": "P2",
+        "status": "pending_review",
+        "plannedLaunch": "2025-06-03",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.765Z",
+        "developers": [
+          {
+            "id": "3f862fc5-5ec7-4a6a-a819-d4d3c9d71487",
+            "userId": "user-dev-lihao",
+            "userName": "李浩",
+            "role": "frontend"
+          },
+          {
+            "id": "91307ea3-ff59-473d-8905-46259dbfb40d",
+            "userId": "user-dev-liuyang",
+            "userName": "刘洋",
+            "role": "data"
+          }
+        ]
+      }
+    ],
+    "developing": [
+      {
+        "id": "05ec8143-be71-4acc-ba68-978df7cd2ac3",
+        "code": "REQ-2025-016",
+        "title": "商家评分系统",
+        "projectId": "proj-merchant",
+        "projectName": "商家后台",
+        "priority": "P2",
+        "status": "developing",
+        "plannedLaunch": "2025-06-03",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.989Z",
+        "developers": [
+          {
+            "id": "d20f0af3-209a-4e0b-bda7-ee6261f6f5f2",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          },
+          {
+            "id": "50ea2f8a-8591-4105-be98-bbf3f41a5be4",
+            "userId": "user-dev-wangting",
+            "userName": "王婷",
+            "role": "frontend"
+          }
+        ]
+      },
+      {
+        "id": "19e2ed23-9ead-4ee6-b4e2-e3c9bcae0171",
+        "code": "REQ-2025-011",
+        "title": "商家入驻流程改造",
+        "projectId": "proj-merchant",
+        "projectName": "商家后台",
+        "priority": "P1",
+        "status": "developing",
+        "plannedLaunch": "2025-06-14",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.9Z",
+        "developers": [
+          {
+            "id": "b400de14-64b7-4b4b-bd97-393d49cf5794",
+            "userId": "user-dev-lihao",
+            "userName": "李浩",
+            "role": "frontend"
+          },
+          {
+            "id": "f9a9fceb-6946-41b7-beb9-337c0320e686",
+            "userId": "user-dev-wangting",
+            "userName": "王婷",
+            "role": "backend"
+          }
+        ]
+      },
+      {
+        "id": "37c434f5-afee-4224-8423-43259bf31e5d",
+        "code": "REQ-2025-010",
+        "title": "实时风控规则引擎",
+        "projectId": "proj-risk",
+        "projectName": "风控系统",
+        "priority": "P0",
+        "status": "developing",
+        "plannedLaunch": "2025-06-15",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.881Z",
+        "developers": [
+          {
+            "id": "4bfcce68-043f-4855-a3ef-d71423d0cd31",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          },
+          {
+            "id": "5e8229fc-3ad7-4133-ba17-440d64bda361",
+            "userId": "user-dev-liuyang",
+            "userName": "刘洋",
+            "role": "data"
+          }
+        ]
+      },
+      {
+        "id": "bc41c328-a936-4af0-abfe-9d6cca702d9d",
+        "code": "REQ-2025-005",
+        "title": "数据报表自动推送 - 每日邮件通知",
+        "projectId": "proj-data",
+        "projectName": "数据平台",
+        "priority": "P2",
+        "status": "developing",
+        "plannedLaunch": "2025-06-04",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.806Z",
+        "developers": [
+          {
+            "id": "23414418-3dc5-43fd-b516-d75b4d8ad22c",
+            "userId": "user-dev-liuyang",
+            "userName": "刘洋",
+            "role": "data"
+          }
+        ]
+      },
+      {
+        "id": "51027e0f-c39e-4b17-8776-cb05337884c5",
+        "code": "REQ-2025-002",
+        "title": "支付渠道对接 - 微信支付V3",
+        "projectId": "proj-payment",
+        "projectName": "支付中台",
+        "priority": "P1",
+        "status": "developing",
+        "plannedLaunch": "2025-06-02",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.749Z",
+        "developers": [
+          {
+            "id": "08652218-411e-40b4-9816-bcaa09afac08",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          }
+        ]
+      }
+    ],
+    "testing": [
+      {
+        "id": "9ed4e7ec-4daa-4e40-8d13-410612cd8936",
+        "code": "REQ-2025-017",
+        "title": "风控黑白名单管理",
+        "projectId": "proj-risk",
+        "projectName": "风控系统",
+        "priority": "P1",
+        "status": "testing",
+        "plannedLaunch": "2025-06-01",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:11.007Z",
+        "developers": [
+          {
+            "id": "77de813a-5fd2-4725-909a-a1b8ae7979d2",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          }
+        ]
+      },
+      {
+        "id": "bb71e648-5469-47a4-9524-13ec0a5eef9f",
+        "code": "REQ-2025-012",
+        "title": "数据报表导出优化",
+        "projectId": "proj-data",
+        "projectName": "数据平台",
+        "priority": "P3",
+        "status": "testing",
+        "plannedLaunch": "2025-06-12",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.921Z",
+        "developers": [
+          {
+            "id": "e2060069-1843-4ae7-b962-08fd5d56db92",
+            "userId": "user-dev-liuyang",
+            "userName": "刘洋",
+            "role": "data"
+          }
+        ]
+      },
+      {
+        "id": "9facd942-d6ca-4aab-8663-e5bf1e342e74",
+        "code": "REQ-2025-001",
+        "title": "用户登录优化 - 支持验证码登录",
+        "projectId": "proj-growth",
+        "projectName": "用户增长",
+        "priority": "P0",
+        "status": "testing",
+        "plannedLaunch": "2025-06-01",
+        "plannedOnline": null,
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.726Z",
+        "developers": [
+          {
+            "id": "f9b8a2a4-6c2f-4787-bb12-ec560fbece97",
+            "userId": "user-dev-lihao",
+            "userName": "李浩",
+            "role": "frontend"
+          },
+          {
+            "id": "5bec4bbc-9c1e-4ca1-a333-5120a7b6ae61",
+            "userId": "user-dev-wangting",
+            "userName": "王婷",
+            "role": "backend"
+          }
+        ]
+      }
+    ],
+    "launched": [
+      {
+        "id": "062e460d-038f-45b8-80c3-f4969ee29fe8",
+        "code": "REQ-2025-015",
+        "title": "用户画像V2",
+        "projectId": "proj-data",
+        "projectName": "数据平台",
+        "priority": "P2",
+        "status": "launched",
+        "plannedLaunch": null,
+        "plannedOnline": "2025-06-05",
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.972Z",
+        "developers": [
+          {
+            "id": "ff16a80c-c589-4ebf-be22-746cae3fb53b",
+            "userId": "user-dev-liuyang",
+            "userName": "刘洋",
+            "role": "data"
+          }
+        ]
+      },
+      {
+        "id": "afa5e9df-125d-4641-aaea-e0c0be92c375",
+        "code": "REQ-2025-014",
+        "title": "支付路由策略升级",
+        "projectId": "proj-payment",
+        "projectName": "支付中台",
+        "priority": "P0",
+        "status": "launched",
+        "plannedLaunch": null,
+        "plannedOnline": "2025-06-08",
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.958Z",
+        "developers": [
+          {
+            "id": "50bf1ca5-c03b-4d1e-9cbe-c5cc44b71762",
+            "userId": "user-dev-chenwei",
+            "userName": "陈伟",
+            "role": "backend"
+          }
+        ]
+      },
+      {
+        "id": "bc811bb0-7220-4d7a-9814-aac1ae5f8d9d",
+        "code": "REQ-2025-004",
+        "title": "订单导出功能 - 支持Excel批量导出",
+        "projectId": "proj-payment",
+        "projectName": "支付中台",
+        "priority": "P3",
+        "status": "launched",
+        "plannedLaunch": null,
+        "plannedOnline": "2025-05-28",
+        "version": 0,
+        "createdAt": "2026-06-21T04:22:10.784Z",
+        "developers": [
+          {
+            "id": "33fce045-86aa-45e0-a8a2-e9ceb58294b9",
+            "userId": "user-dev-wangting",
+            "userName": "王婷",
+            "role": "backend"
+          },
+          {
+            "id": "f3398a6e-18f6-4bb3-b250-6b1ae548d6e9",
+            "userId": "user-dev-wangting",
+            "userName": "王婷",
+            "role": "frontend"
+          }
+        ]
+      }
+    ]
+  },
+  "byDeveloper": [
+    {
+      "user": {
+        "id": "user-dev-chenwei",
+        "name": "陈伟"
+      },
+      "requirements": [
+        {
+          "id": "9ed4e7ec-4daa-4e40-8d13-410612cd8936",
+          "code": "REQ-2025-017",
+          "title": "风控黑白名单管理",
+          "projectId": "proj-risk",
+          "projectName": "风控系统",
+          "priority": "P1",
+          "status": "testing",
+          "plannedLaunch": "2025-06-01",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:11.007Z",
+          "developers": [
+            {
+              "id": "77de813a-5fd2-4725-909a-a1b8ae7979d2",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            }
+          ]
+        },
+        {
+          "id": "05ec8143-be71-4acc-ba68-978df7cd2ac3",
+          "code": "REQ-2025-016",
+          "title": "商家评分系统",
+          "projectId": "proj-merchant",
+          "projectName": "商家后台",
+          "priority": "P2",
+          "status": "developing",
+          "plannedLaunch": "2025-06-03",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.989Z",
+          "developers": [
+            {
+              "id": "d20f0af3-209a-4e0b-bda7-ee6261f6f5f2",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            },
+            {
+              "id": "50ea2f8a-8591-4105-be98-bbf3f41a5be4",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "afa5e9df-125d-4641-aaea-e0c0be92c375",
+          "code": "REQ-2025-014",
+          "title": "支付路由策略升级",
+          "projectId": "proj-payment",
+          "projectName": "支付中台",
+          "priority": "P0",
+          "status": "launched",
+          "plannedLaunch": null,
+          "plannedOnline": "2025-06-08",
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.958Z",
+          "developers": [
+            {
+              "id": "50bf1ca5-c03b-4d1e-9cbe-c5cc44b71762",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            }
+          ]
+        },
+        {
+          "id": "2ffea1dc-d224-4b3d-ba63-0ddfd33558cf",
+          "code": "REQ-2025-013",
+          "title": "消息通知中心",
+          "projectId": "proj-growth",
+          "projectName": "用户增长",
+          "priority": "P1",
+          "status": "pending_review",
+          "plannedLaunch": "2025-06-11",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.937Z",
+          "developers": [
+            {
+              "id": "7e9241fe-3175-4215-9168-69c7b1c1837e",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            },
+            {
+              "id": "58f217de-c390-47c2-8c40-c2151fd81143",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "37c434f5-afee-4224-8423-43259bf31e5d",
+          "code": "REQ-2025-010",
+          "title": "实时风控规则引擎",
+          "projectId": "proj-risk",
+          "projectName": "风控系统",
+          "priority": "P0",
+          "status": "developing",
+          "plannedLaunch": "2025-06-15",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.881Z",
+          "developers": [
+            {
+              "id": "4bfcce68-043f-4855-a3ef-d71423d0cd31",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            },
+            {
+              "id": "5e8229fc-3ad7-4133-ba17-440d64bda361",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        },
+        {
+          "id": "59caa290-25fe-4fb8-8d08-56bc6a1e32f8",
+          "code": "REQ-2025-008",
+          "title": "对账系统优化",
+          "projectId": "proj-payment",
+          "projectName": "支付中台",
+          "priority": "P1",
+          "status": "pending_review",
+          "plannedLaunch": "2025-06-18",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.853Z",
+          "developers": [
+            {
+              "id": "1ed7e130-8d0a-4b32-87f4-dbc1292dba32",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            }
+          ]
+        },
+        {
+          "id": "c3853883-13e9-4a22-8408-950bedf137a5",
+          "code": "REQ-2025-006",
+          "title": "权限管理模块升级",
+          "projectId": "proj-risk",
+          "projectName": "风控系统",
+          "priority": "P1",
+          "status": "pending_review",
+          "plannedLaunch": null,
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.824Z",
+          "developers": [
+            {
+              "id": "eb18d868-aaa6-4d47-8046-a9da0290a730",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            }
+          ]
+        },
+        {
+          "id": "51027e0f-c39e-4b17-8776-cb05337884c5",
+          "code": "REQ-2025-002",
+          "title": "支付渠道对接 - 微信支付V3",
+          "projectId": "proj-payment",
+          "projectName": "支付中台",
+          "priority": "P1",
+          "status": "developing",
+          "plannedLaunch": "2025-06-02",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.749Z",
+          "developers": [
+            {
+              "id": "08652218-411e-40b4-9816-bcaa09afac08",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "user": {
+        "id": "user-dev-wangting",
+        "name": "王婷"
+      },
+      "requirements": [
+        {
+          "id": "05ec8143-be71-4acc-ba68-978df7cd2ac3",
+          "code": "REQ-2025-016",
+          "title": "商家评分系统",
+          "projectId": "proj-merchant",
+          "projectName": "商家后台",
+          "priority": "P2",
+          "status": "developing",
+          "plannedLaunch": "2025-06-03",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.989Z",
+          "developers": [
+            {
+              "id": "d20f0af3-209a-4e0b-bda7-ee6261f6f5f2",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            },
+            {
+              "id": "50ea2f8a-8591-4105-be98-bbf3f41a5be4",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "19e2ed23-9ead-4ee6-b4e2-e3c9bcae0171",
+          "code": "REQ-2025-011",
+          "title": "商家入驻流程改造",
+          "projectId": "proj-merchant",
+          "projectName": "商家后台",
+          "priority": "P1",
+          "status": "developing",
+          "plannedLaunch": "2025-06-14",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.9Z",
+          "developers": [
+            {
+              "id": "b400de14-64b7-4b4b-bd97-393d49cf5794",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            },
+            {
+              "id": "f9a9fceb-6946-41b7-beb9-337c0320e686",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "backend"
+            }
+          ]
+        },
+        {
+          "id": "49c00cbb-4a62-4bfd-8611-e6caf873a70d",
+          "code": "REQ-2025-009",
+          "title": "A/B测试平台",
+          "projectId": "proj-growth",
+          "projectName": "用户增长",
+          "priority": "P2",
+          "status": "pending_review",
+          "plannedLaunch": "2025-06-17",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.867Z",
+          "developers": [
+            {
+              "id": "06096d5c-9e47-4287-abb3-f4ea89bc126d",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "bc811bb0-7220-4d7a-9814-aac1ae5f8d9d",
+          "code": "REQ-2025-004",
+          "title": "订单导出功能 - 支持Excel批量导出",
+          "projectId": "proj-payment",
+          "projectName": "支付中台",
+          "priority": "P3",
+          "status": "launched",
+          "plannedLaunch": null,
+          "plannedOnline": "2025-05-28",
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.784Z",
+          "developers": [
+            {
+              "id": "33fce045-86aa-45e0-a8a2-e9ceb58294b9",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "backend"
+            },
+            {
+              "id": "f3398a6e-18f6-4bb3-b250-6b1ae548d6e9",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "bc811bb0-7220-4d7a-9814-aac1ae5f8d9d",
+          "code": "REQ-2025-004",
+          "title": "订单导出功能 - 支持Excel批量导出",
+          "projectId": "proj-payment",
+          "projectName": "支付中台",
+          "priority": "P3",
+          "status": "launched",
+          "plannedLaunch": null,
+          "plannedOnline": "2025-05-28",
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.784Z",
+          "developers": [
+            {
+              "id": "33fce045-86aa-45e0-a8a2-e9ceb58294b9",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "backend"
+            },
+            {
+              "id": "f3398a6e-18f6-4bb3-b250-6b1ae548d6e9",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "9facd942-d6ca-4aab-8663-e5bf1e342e74",
+          "code": "REQ-2025-001",
+          "title": "用户登录优化 - 支持验证码登录",
+          "projectId": "proj-growth",
+          "projectName": "用户增长",
+          "priority": "P0",
+          "status": "testing",
+          "plannedLaunch": "2025-06-01",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.726Z",
+          "developers": [
+            {
+              "id": "f9b8a2a4-6c2f-4787-bb12-ec560fbece97",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            },
+            {
+              "id": "5bec4bbc-9c1e-4ca1-a333-5120a7b6ae61",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "backend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "user": {
+        "id": "user-dev-liuyang",
+        "name": "刘洋"
+      },
+      "requirements": [
+        {
+          "id": "062e460d-038f-45b8-80c3-f4969ee29fe8",
+          "code": "REQ-2025-015",
+          "title": "用户画像V2",
+          "projectId": "proj-data",
+          "projectName": "数据平台",
+          "priority": "P2",
+          "status": "launched",
+          "plannedLaunch": null,
+          "plannedOnline": "2025-06-05",
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.972Z",
+          "developers": [
+            {
+              "id": "ff16a80c-c589-4ebf-be22-746cae3fb53b",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        },
+        {
+          "id": "bb71e648-5469-47a4-9524-13ec0a5eef9f",
+          "code": "REQ-2025-012",
+          "title": "数据报表导出优化",
+          "projectId": "proj-data",
+          "projectName": "数据平台",
+          "priority": "P3",
+          "status": "testing",
+          "plannedLaunch": "2025-06-12",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.921Z",
+          "developers": [
+            {
+              "id": "e2060069-1843-4ae7-b962-08fd5d56db92",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        },
+        {
+          "id": "37c434f5-afee-4224-8423-43259bf31e5d",
+          "code": "REQ-2025-010",
+          "title": "实时风控规则引擎",
+          "projectId": "proj-risk",
+          "projectName": "风控系统",
+          "priority": "P0",
+          "status": "developing",
+          "plannedLaunch": "2025-06-15",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.881Z",
+          "developers": [
+            {
+              "id": "4bfcce68-043f-4855-a3ef-d71423d0cd31",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            },
+            {
+              "id": "5e8229fc-3ad7-4133-ba17-440d64bda361",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        },
+        {
+          "id": "bc41c328-a936-4af0-abfe-9d6cca702d9d",
+          "code": "REQ-2025-005",
+          "title": "数据报表自动推送 - 每日邮件通知",
+          "projectId": "proj-data",
+          "projectName": "数据平台",
+          "priority": "P2",
+          "status": "developing",
+          "plannedLaunch": "2025-06-04",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.806Z",
+          "developers": [
+            {
+              "id": "23414418-3dc5-43fd-b516-d75b4d8ad22c",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        },
+        {
+          "id": "8b6c7729-fadd-472b-91ae-baf62ed21a5f",
+          "code": "REQ-2025-003",
+          "title": "用户画像数据看板",
+          "projectId": "proj-data",
+          "projectName": "数据平台",
+          "priority": "P2",
+          "status": "pending_review",
+          "plannedLaunch": "2025-06-03",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.765Z",
+          "developers": [
+            {
+              "id": "3f862fc5-5ec7-4a6a-a819-d4d3c9d71487",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            },
+            {
+              "id": "91307ea3-ff59-473d-8905-46259dbfb40d",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "user": {
+        "id": "user-dev-lihao",
+        "name": "李浩"
+      },
+      "requirements": [
+        {
+          "id": "2ffea1dc-d224-4b3d-ba63-0ddfd33558cf",
+          "code": "REQ-2025-013",
+          "title": "消息通知中心",
+          "projectId": "proj-growth",
+          "projectName": "用户增长",
+          "priority": "P1",
+          "status": "pending_review",
+          "plannedLaunch": "2025-06-11",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.937Z",
+          "developers": [
+            {
+              "id": "7e9241fe-3175-4215-9168-69c7b1c1837e",
+              "userId": "user-dev-chenwei",
+              "userName": "陈伟",
+              "role": "backend"
+            },
+            {
+              "id": "58f217de-c390-47c2-8c40-c2151fd81143",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "19e2ed23-9ead-4ee6-b4e2-e3c9bcae0171",
+          "code": "REQ-2025-011",
+          "title": "商家入驻流程改造",
+          "projectId": "proj-merchant",
+          "projectName": "商家后台",
+          "priority": "P1",
+          "status": "developing",
+          "plannedLaunch": "2025-06-14",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.9Z",
+          "developers": [
+            {
+              "id": "b400de14-64b7-4b4b-bd97-393d49cf5794",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            },
+            {
+              "id": "f9a9fceb-6946-41b7-beb9-337c0320e686",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "backend"
+            }
+          ]
+        },
+        {
+          "id": "06188f86-acbe-440d-bd8d-1261974c05fd",
+          "code": "REQ-2025-007",
+          "title": "通知中心重构",
+          "projectId": "proj-growth",
+          "projectName": "用户增长",
+          "priority": "P2",
+          "status": "pending_review",
+          "plannedLaunch": null,
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.838Z",
+          "developers": [
+            {
+              "id": "6af41a61-e6d5-4e7a-a090-fea6454e338f",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            }
+          ]
+        },
+        {
+          "id": "8b6c7729-fadd-472b-91ae-baf62ed21a5f",
+          "code": "REQ-2025-003",
+          "title": "用户画像数据看板",
+          "projectId": "proj-data",
+          "projectName": "数据平台",
+          "priority": "P2",
+          "status": "pending_review",
+          "plannedLaunch": "2025-06-03",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.765Z",
+          "developers": [
+            {
+              "id": "3f862fc5-5ec7-4a6a-a819-d4d3c9d71487",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            },
+            {
+              "id": "91307ea3-ff59-473d-8905-46259dbfb40d",
+              "userId": "user-dev-liuyang",
+              "userName": "刘洋",
+              "role": "data"
+            }
+          ]
+        },
+        {
+          "id": "9facd942-d6ca-4aab-8663-e5bf1e342e74",
+          "code": "REQ-2025-001",
+          "title": "用户登录优化 - 支持验证码登录",
+          "projectId": "proj-growth",
+          "projectName": "用户增长",
+          "priority": "P0",
+          "status": "testing",
+          "plannedLaunch": "2025-06-01",
+          "plannedOnline": null,
+          "version": 0,
+          "createdAt": "2026-06-21T04:22:10.726Z",
+          "developers": [
+            {
+              "id": "f9b8a2a4-6c2f-4787-bb12-ec560fbece97",
+              "userId": "user-dev-lihao",
+              "userName": "李浩",
+              "role": "frontend"
+            },
+            {
+              "id": "5bec4bbc-9c1e-4ca1-a333-5120a7b6ae61",
+              "userId": "user-dev-wangting",
+              "userName": "王婷",
+              "role": "backend"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

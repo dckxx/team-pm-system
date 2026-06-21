@@ -1,0 +1,11 @@
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLXBtLTAwMSIsImVtYWlsIjoiemhhbmdtaW5nQGV4YW1wbGUuY29tIiwicm9sZSI6InBtIiwiaWF0IjoxNzgyMDI3Nzg1LCJleHAiOjE3ODI2MzI1ODV9.81MytetCzPZVsioIInpWfy16Gn1zpmk-JxZxI6cjNto",
+  "user": {
+    "id": "user-pm-001",
+    "name": "张明",
+    "email": "zhangming@example.com",
+    "role": "pm",
+    "devRoles": [],
+    "avatarUrl": null
+  }
+}
